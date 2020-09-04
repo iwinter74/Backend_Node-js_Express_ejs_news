@@ -1,0 +1,15 @@
+<% navigation = ['home','articles'] %>
+
+<nav>
+    <ul>
+<%navigation.forEach(elt => {%>
+    <%if (elt=='home'){%>
+        <li><a href="/"><%=elt%></a></li>
+    <%} else {%>
+        <li><a href="/<%=elt%>"><%=elt%></a></li>
+    <%}%>
+
+<%})%>
+
+    </ul>
+</nav>
